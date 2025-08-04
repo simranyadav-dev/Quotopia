@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotopia - Discover Inspiring Quotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <div class="bg-animation"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Quotopia</div>
+            <div class="controls">
+                <div class="theme-palette">
+                    <span class="palette-label">🎨</span>
+                    <div class="theme-switcher">
+                        <button class="theme-btn theme-1 active" data-theme="1" aria-label="Purple Nebula theme" title="Purple Nebula"></button>
+                        <button class="theme-btn theme-2" data-theme="2" aria-label="Sunset Dream theme" title="Sunset Dream"></button>
+                        <button class="theme-btn theme-3" data-theme="3" aria-label="Ocean Breeze theme" title="Ocean Breeze"></button>
+                        <button class="theme-btn theme-4" data-theme="4" aria-label="Forest Glow theme" title="Forest Glow"></button>
+                        <button class="theme-btn theme-5" data-theme="5" aria-label="Cosmic Fire theme" title="Cosmic Fire"></button>
+                    </div>
+                </div>
+                <button class="mode-toggle" onclick="toggleMode()" aria-label="Toggle dark mode" title="Toggle Light/Dark Mode">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="quote-container">
+            <div class="loading" id="loading"></div>
+            <div class="quote-content" id="quoteContent">
+                <div class="quote-text" id="quoteText">Welcome to Quotopia! Click "New Quote" to discover inspiring words from great minds.</div>
+                <div class="quote-author" id="quoteAuthor">Start your journey</div>
+            </div>
+            
+            <div class="actions">
+                <button class="btn btn-primary" onclick="getNewQuote()">
+                    ✨ New Quote
+                </button>
+                <button class="btn btn-secondary" onclick="copyQuote()">
+                    📋 Copy
+                </button>
+                <button class="btn btn-secondary" onclick="shareQuote()">
+                    🔗 Share
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Quotopia. All rights reserved by SIMRAN YADAV.</p>
+            
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="quote.js"></script>
+</body>
+</html>
