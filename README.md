@@ -14,7 +14,7 @@
 
 Whether you need a spark of creativity, motivation, or just something beautiful to share — Quotopia is your cozy corner of the internet.
 
-> Try it live: [quotopia.vercel.app](https://quotopia.vercel.app)
+> Try it live: [quotopia.vercel.app](https://quotopia-ivory.vercel.app/)
 
 ---
 
